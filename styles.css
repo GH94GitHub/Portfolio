@@ -357,7 +357,6 @@ footer .links-section {
     flex-direction: row;
     height: calc(100% - 40px);
     width: 40%;
-    margin: auto 40px;
 }
 footer .links-section .link-group {
     display: flex;
