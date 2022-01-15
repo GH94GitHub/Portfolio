@@ -356,6 +356,7 @@ footer .links-section {
     display: flex;
     flex-direction: row;
     height: calc(100% - 40px);
+    width: 40%;
     margin: auto 40px;
 }
 footer .links-section .link-group {
@@ -426,6 +427,9 @@ footer .links-section .link-group {
 }
 @media screen and (max-width: 525px) {
 
+    footer .links-section {
+        width: 100%;
+    }
     .section {
         margin: 0;
     }
