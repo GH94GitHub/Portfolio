@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const modal = document.querySelector('.modal'); // Modal holds video presentations
     const video = modal.querySelector('video');
     const presentations = document.querySelectorAll('.pp'); // Presentation cards
+    const pageContainer = document.querySelector('#pageContainer');
     
     // Fade In Intro after time
     setTimeout(() => {
@@ -22,8 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
             const href = pageLink.getAttribute("href");
             const offsetTop = document.querySelector(href).offsetTop;
+            console.log(`offsetTop for ${pageLink}`)
+            console.log(offsetTop);
 
-            window.scrollTo({
+            pageContainer.scrollTo({
                 top: offsetTop,
                 behavior: "smooth"
             });
