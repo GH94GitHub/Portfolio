@@ -405,7 +405,7 @@ footer .links-section .link-group {
 }
 @media only screen and (max-width: 769px) {
     body {
-        background: url("./pictures/dark-nature.webp") no-repeat fixed center;
+        background: url("./pictures/dark-nature-mobile.webp") no-repeat fixed center;
     }
     .section .content-row {
         max-width: 100%;
