@@ -408,6 +408,9 @@ footer .links-section .link-group {
       }
 }
 @media only screen and (max-width: 769px) {
+    body {
+        background: url('./pictures/dark-nature-mobile.webp');
+    }
     .section .content-row {
         max-width: 100%;
     }
