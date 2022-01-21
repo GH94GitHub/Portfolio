@@ -22,10 +22,6 @@ body {
 }
 #fullpage {
     background: url("./pictures/dark-nature.webp") no-repeat fixed center;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size:cover;
-    background-size: cover;
 }
 
 hr.divider {
