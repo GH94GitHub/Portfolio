@@ -4,8 +4,6 @@
 .secondary-color {
     color: white;
 }
-
-
 html {
     scroll-behavior: smooth;
 }
@@ -20,8 +18,21 @@ footer a:hover {
 body {
     margin: 0;
 }
-#fullpage {
-    background: url("./pictures/dark-nature.webp") no-repeat fixed center;
+#pageContainer {
+    background: url("./pictures/dark-nature.webp");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    overflow: scroll;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 hr.divider {
@@ -406,13 +417,12 @@ footer .links-section .link-group {
       }
 }
 @media only screen and (max-width: 769px) {
-    /* #fullpage {
-        background: url("./pictures/dark-nature-mobile.webp") no-repeat fixed center;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size:cover;
-        background-size: cover;
-    } */
+     #pageContainer {
+        background: url("./pictures/dark-nature.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
     .section .content-row {
         max-width: 100%;
     }
