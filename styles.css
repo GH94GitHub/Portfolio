@@ -30,7 +30,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
 
-    overflow: scroll;
+    overflow-y: scroll;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
@@ -275,7 +275,7 @@ nav {
     border-radius: 50%;
     background-color: #D8E9FD;
     position: fixed;
-    right: 20px;
+    right: 40px;
     bottom: 20px;
     cursor: pointer;
     padding: 7px;
