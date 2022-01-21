@@ -19,7 +19,13 @@ footer a:hover {
 
 body {
     margin: 0;
+}
+#fullpage {
     background: url("./pictures/dark-nature.webp") no-repeat fixed center;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
+    background-size: cover;
 }
 
 hr.divider {
@@ -404,7 +410,7 @@ footer .links-section .link-group {
       }
 }
 @media only screen and (max-width: 769px) {
-    body {
+    #fullpage {
         background: url("./pictures/dark-nature-mobile.webp") no-repeat fixed center;
     }
     .section .content-row {

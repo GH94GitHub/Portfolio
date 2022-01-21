@@ -9,201 +9,203 @@
     </head>
 
     <body class="secondary-color">
-        <nav>
-            <div class="space-between">
-                <h1 id="page-signature"><a href="#">Web Developer</a></h1>
+        <div id="fullpage" style="width: 100%; height: 100%;">
+            <nav>
+                <div class="space-between">
+                    <h1 id="page-signature"><a href="#">Web Developer</a></h1>
+                </div>
+            </nav>
+            
+            <div class="dropdown closed">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="menu">
+                    <li><a class="page-link" href="#main">Bio</a></li>
+                    <li><a class="page-link" href="#projects" >Portfolio</a></li>
+                    <li><a class="page-link" href="#footer" >Links</a></li>
+                </ul>
             </div>
-        </nav>
-        
-        <div class="dropdown closed">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="menu">
-                <li><a class="page-link" href="#main">Bio</a></li>
-                <li><a class="page-link" href="#projects" >Portfolio</a></li>
-                <li><a class="page-link" href="#footer" >Links</a></li>
-            </ul>
+            <!-- Opener Section -->
+            <div id="main" class="section">
+    
+                <div class="content-row">
+                    <!-- Picture -->
+                    <img id="portrait" class="img-v" src="./pictures/portrait.jpg" alt="Portrait of myself">
+                    <!-- Description -->
+                    <div class="description">
+                        <h3>Tony Henderson</h3>
+                        <p>
+                            Hello, I’m Tony, a web developer living in Lincoln, Nebraska. I am a student attending a JavaScript full-stack Bachelor’s degree program set to graduate at the end of January 2022. I like to learn new technologies and the most efficient ways to handle solutions. I love to work on 3D puzzles and building a web system is no different, the bigger the challenge is, the sweeter the satisfaction and that is what drives me. I love to make people's lives easier doing what I love to do!
+                        </p>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!-- Projects Section-->
+            <div id="projects" class="section">
+    
+                <h1><a href="https://github.com/GH94GitHub?tab=repositories" target="_blank">Portfolio</a></h1>
+                <hr class="divider">
+                <br>
+                <div id="projectWrapper">
+    
+                    <div id="budgetWeb" class="project hover-grow">
+                        <a href="https://github.com/GH94GitHub/budget-web" target="_blank">
+                            <h3 class="project-title">Budget Manager <br> (Under Construction)</h3>
+                            <!-- Technologies -->
+                            <div class="technologies">
+                                <div class="node">NodeJS</div>
+                                <div class="express">ExpressJS</div>
+                                <div class="angular">AngularJS</div>
+                                <div class="mongodb">MongoDb</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="bcrs" class="project hover-grow">
+                        <a href="https://gryffindor-bcrs.herokuapp.com/" target="_blank">
+                            <h3 class="project-title">Bob's Computer Repair</h3>
+                            <!-- Technologies -->
+                            <div class="technologies">
+                                <div class="node">NodeJS</div>
+                                <div class="express">ExpressJS</div>
+                                <div class="angular">AngularJS</div>
+                                <div class="mongodb">MongoDb</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="nodebucket" class="project hover-grow">
+                        <a href="https://my-nodebucket.herokuapp.com/" target="_blank">
+                            <h3 class="project-title">NodeBucket</h3>
+                            <!-- Technologies -->
+                            <div class="technologies">
+                                <div class="node">NodeJS</div>
+                                <div class="express">ExpressJS</div>
+                                <div class="angular">AngularJS</div>
+                                <div class="mongodb">MongoDb</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="gpa-calculator" class="project hover-grow">
+                        <a href="https://gh94github.github.io/gpa-calculator-app" target="_blank">
+                            <h3 class="project-title">GPA Calculator</h3>
+                            <!-- Technologies -->
+                            <div class="technologies">
+                                <div class="node">NodeJS</div>
+                                <div class="express">ExpressJS</div>
+                                <div class="angular">AngularJS</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="in-n-out-books" class="project hover-grow">
+                        <a href="https://gh94github.github.io/in-n-out-books" target="_blank">
+                            <h3 class="project-title">In-N-Out Books</h3>
+                            <!-- Technologies -->
+                            <div class="technologies">
+                                <div class="node">NodeJS</div>
+                                <div class="express">ExpressJS</div>
+                                <div class="angular">AngularJS</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="composer" class="project hover-grow">
+                        <a href="https://gh94github.github.io/enterprise-composer-app/" target="_blank">
+                            <h3 class="project-title">Composer App</h3>
+                            <!-- Technologies -->
+                            <div class="technologies">
+                                <div class="node">NodeJS</div>
+                                <div class="express">ExpressJS</div>
+                                <div class="angular">AngularJS</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="js-trivia" class="project hover-grow">
+                        <a href="https://marblef2.github.io/Team_Cho_Chang/" target="_blank">
+                            <h3 class="project-title">JavaScript Trivia</h3>
+                            <!-- Technologies -->
+                            <div class="technologies">
+                                <div class="html">HTML</div>
+                                <div class="css"> CSS</div>
+                                <div class="knockoutjs">KnockoutJS</div>
+                                <div class="jquery">jQuery</div>
+                            </div>    
+                        </a>
+                    </div>
+                    <!-- pps -->
+                    <div class="project pp hover-grow" videoSrc="./videos/henderson_presentation_1.3.mp4">
+                        <h3 class="project-title">Representational State Transfer</h3>
+                        <div class="technologies">
+                            <div class="presentation">Presentation</div>
+                        </div>
+                    </div>
+                    <div class="project pp hover-grow" videoSrc="./videos/henderson_presentation_2.2.mp4">
+                        <h3 class="project-title">RESTful APIs</h3>
+                        <div class="technologies">
+                            <div class="presentation">Presentation</div>
+                        </div>
+                    </div>
+                    <div class="project pp hover-grow" videoSrc="./videos/henderson_presentation_3.3.mp4">
+                        <h3 class="project-title">SOAP</h3>
+                        <div class="technologies">
+                            <div class="presentation">Presentation</div>
+                        </div>
+                    </div>
+                    <div class="project pp hover-grow" videoSrc="./videos/henderson_presentation_4.2.mp4">
+                        <h3 class="project-title">JSON API</h3>
+                        <div class="technologies">
+                            <div class="presentation">Presentation</div>
+                        </div>
+                    </div>
+                    <div class="project pp hover-grow" videoSrc="./videos/henderson_presentation_7.2.mp4">
+                        <h3 class="project-title">Service-Oriented Architecture</h3>
+                        <div class="technologies">
+                            <div class="presentation">Presentation</div>
+                        </div>
+                    </div>
+                    <div class="project pp hover-grow" videoSrc="./videos/henderson_presentation_1.2.mp4">
+                        <h3 class="project-title">The Technology Value Stream</h3>
+                        <div class="technologies">
+                            <div class="presentation">Presentation</div>
+                        </div>
+                    </div>
+                    <div class="project pp hover-grow" videoSrc="./videos/henderson_presentation_3.2.mp4">
+                        <h3 class="project-title">Automated Testing</h3>
+                        <div class="technologies">
+                            <div class="presentation">Presentation</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Presentation Modal -->
+                <div class="modal">
+                    <div class="modal-window">
+                        <video width="700" height="500" controls autoplay>
+                            <source src="./videos/henderson_presentation_1.3.mp4" type="video/mp4">
+                          </video>
+                    </div>
+                </div>
+            </div>
+    
+            <footer id="footer">
+                <div class="links-section">
+                    <div class="link-group">
+                        <h3 class="link-group-title">Explore</h3>
+                        <ul class="link-group-list">
+                            <li><a href="#main" class="page-link">About Me</a></li>
+                            <li><a href="#projects" class="page-link">Portfolio</a></li>
+                            <li><a href="https://github.com/GH94GitHub" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3 class="link-group-title">Get in Touch</h3>
+                        <ul class="link-group-list">
+                            <li><a href="mailto:th_rams94@hotmail.com">Email</a></li>
+                            <li><a href="https://www.linkedin.com/in/tony-henderson-39a983225/" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <!-- Opener Section -->
-        <div id="main" class="section">
-
-            <div class="content-row">
-                <!-- Picture -->
-                <img id="portrait" class="img-v" src="./pictures/portrait.jpg" alt="Portrait of myself">
-                <!-- Description -->
-                <div class="description">
-                    <h3>Tony Henderson</h3>
-                    <p>
-                        Hello, I’m Tony, a web developer living in Lincoln, Nebraska. I am a student attending a JavaScript full-stack Bachelor’s degree program set to graduate at the end of January 2022. I like to learn new technologies and the most efficient ways to handle solutions. I love to work on 3D puzzles and building a web system is no different, the bigger the challenge is, the sweeter the satisfaction and that is what drives me. I love to make people's lives easier doing what I love to do!
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Projects Section-->
-        <div id="projects" class="section">
-
-            <h1><a href="https://github.com/GH94GitHub?tab=repositories" target="_blank">Portfolio</a></h1>
-            <hr class="divider">
-            <br>
-            <div id="projectWrapper">
-
-                <div id="budgetWeb" class="project hover-grow">
-                    <a href="https://github.com/GH94GitHub/budget-web" target="_blank">
-                        <h3 class="project-title">Budget Manager <br> (Under Construction)</h3>
-                        <!-- Technologies -->
-                        <div class="technologies">
-                            <div class="node">NodeJS</div>
-                            <div class="express">ExpressJS</div>
-                            <div class="angular">AngularJS</div>
-                            <div class="mongodb">MongoDb</div>
-                        </div>
-                    </a>
-                </div>
-                <div id="bcrs" class="project hover-grow">
-                    <a href="https://gryffindor-bcrs.herokuapp.com/" target="_blank">
-                        <h3 class="project-title">Bob's Computer Repair</h3>
-                        <!-- Technologies -->
-                        <div class="technologies">
-                            <div class="node">NodeJS</div>
-                            <div class="express">ExpressJS</div>
-                            <div class="angular">AngularJS</div>
-                            <div class="mongodb">MongoDb</div>
-                        </div>
-                    </a>
-                </div>
-                <div id="nodebucket" class="project hover-grow">
-                    <a href="https://my-nodebucket.herokuapp.com/" target="_blank">
-                        <h3 class="project-title">NodeBucket</h3>
-                        <!-- Technologies -->
-                        <div class="technologies">
-                            <div class="node">NodeJS</div>
-                            <div class="express">ExpressJS</div>
-                            <div class="angular">AngularJS</div>
-                            <div class="mongodb">MongoDb</div>
-                        </div>
-                    </a>
-                </div>
-                <div id="gpa-calculator" class="project hover-grow">
-                    <a href="https://gh94github.github.io/gpa-calculator-app" target="_blank">
-                        <h3 class="project-title">GPA Calculator</h3>
-                        <!-- Technologies -->
-                        <div class="technologies">
-                            <div class="node">NodeJS</div>
-                            <div class="express">ExpressJS</div>
-                            <div class="angular">AngularJS</div>
-                        </div>
-                    </a>
-                </div>
-                <div id="in-n-out-books" class="project hover-grow">
-                    <a href="https://gh94github.github.io/in-n-out-books" target="_blank">
-                        <h3 class="project-title">In-N-Out Books</h3>
-                        <!-- Technologies -->
-                        <div class="technologies">
-                            <div class="node">NodeJS</div>
-                            <div class="express">ExpressJS</div>
-                            <div class="angular">AngularJS</div>
-                        </div>
-                    </a>
-                </div>
-                <div id="composer" class="project hover-grow">
-                    <a href="https://gh94github.github.io/enterprise-composer-app/" target="_blank">
-                        <h3 class="project-title">Composer App</h3>
-                        <!-- Technologies -->
-                        <div class="technologies">
-                            <div class="node">NodeJS</div>
-                            <div class="express">ExpressJS</div>
-                            <div class="angular">AngularJS</div>
-                        </div>
-                    </a>
-                </div>
-                <div id="js-trivia" class="project hover-grow">
-                    <a href="https://marblef2.github.io/Team_Cho_Chang/" target="_blank">
-                        <h3 class="project-title">JavaScript Trivia</h3>
-                        <!-- Technologies -->
-                        <div class="technologies">
-                            <div class="html">HTML</div>
-                            <div class="css"> CSS</div>
-                            <div class="knockoutjs">KnockoutJS</div>
-                            <div class="jquery">jQuery</div>
-                        </div>    
-                    </a>
-                </div>
-                <!-- pps -->
-                <div class="project pp hover-grow" videoSrc="./videos/henderson_presentation_1.3.mp4">
-                    <h3 class="project-title">Representational State Transfer</h3>
-                    <div class="technologies">
-                        <div class="presentation">Presentation</div>
-                    </div>
-                </div>
-                <div class="project pp hover-grow" videoSrc="./videos/henderson_presentation_2.2.mp4">
-                    <h3 class="project-title">RESTful APIs</h3>
-                    <div class="technologies">
-                        <div class="presentation">Presentation</div>
-                    </div>
-                </div>
-                <div class="project pp hover-grow" videoSrc="./videos/henderson_presentation_3.3.mp4">
-                    <h3 class="project-title">SOAP</h3>
-                    <div class="technologies">
-                        <div class="presentation">Presentation</div>
-                    </div>
-                </div>
-                <div class="project pp hover-grow" videoSrc="./videos/henderson_presentation_4.2.mp4">
-                    <h3 class="project-title">JSON API</h3>
-                    <div class="technologies">
-                        <div class="presentation">Presentation</div>
-                    </div>
-                </div>
-                <div class="project pp hover-grow" videoSrc="./videos/henderson_presentation_7.2.mp4">
-                    <h3 class="project-title">Service-Oriented Architecture</h3>
-                    <div class="technologies">
-                        <div class="presentation">Presentation</div>
-                    </div>
-                </div>
-                <div class="project pp hover-grow" videoSrc="./videos/henderson_presentation_1.2.mp4">
-                    <h3 class="project-title">The Technology Value Stream</h3>
-                    <div class="technologies">
-                        <div class="presentation">Presentation</div>
-                    </div>
-                </div>
-                <div class="project pp hover-grow" videoSrc="./videos/henderson_presentation_3.2.mp4">
-                    <h3 class="project-title">Automated Testing</h3>
-                    <div class="technologies">
-                        <div class="presentation">Presentation</div>
-                    </div>
-                </div>
-            </div>
-            <!-- Presentation Modal -->
-            <div class="modal">
-                <div class="modal-window">
-                    <video width="700" height="500" controls autoplay>
-                        <source src="./videos/henderson_presentation_1.3.mp4" type="video/mp4">
-                      </video>
-                </div>
-            </div>
-        </div>
-
-        <footer id="footer">
-            <div class="links-section">
-                <div class="link-group">
-                    <h3 class="link-group-title">Explore</h3>
-                    <ul class="link-group-list">
-                        <li><a href="#main" class="page-link">About Me</a></li>
-                        <li><a href="#projects" class="page-link">Portfolio</a></li>
-                        <li><a href="https://github.com/GH94GitHub" target="_blank">GitHub</a></li>
-                    </ul>
-                </div>
-                <div class="link-group">
-                    <h3 class="link-group-title">Get in Touch</h3>
-                    <ul class="link-group-list">
-                        <li><a href="mailto:th_rams94@hotmail.com">Email</a></li>
-                        <li><a href="https://www.linkedin.com/in/tony-henderson-39a983225/" target="_blank">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
     <script src="../index.js"></script>
     </body>
 
