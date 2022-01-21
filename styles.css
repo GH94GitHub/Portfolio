@@ -412,6 +412,10 @@ footer .links-section .link-group {
 @media only screen and (max-width: 769px) {
     #fullpage {
         background: url("./pictures/dark-nature-mobile.webp") no-repeat fixed center;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size:cover;
+        background-size: cover;
     }
     .section .content-row {
         max-width: 100%;
