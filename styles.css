@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .primary-color {
     color: #252B29;
@@ -15,6 +16,7 @@ a {
 }
 p {
     text-indent: 20px;
+
 }
 footer a:hover {
     text-decoration: underline;
@@ -22,6 +24,7 @@ footer a:hover {
 
 body {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 #pageContainer {
     background: url("./pictures/dark-nature.webp");
@@ -218,10 +221,11 @@ hr.divider {
 /* -------------------- Navbar */
 nav {
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 #page-signature {
     margin: auto 0;
+    font-size: 2em;
     font-family: 'Cookie', cursive;
 }
 /* -------------------- End navbar */
@@ -243,8 +247,10 @@ nav {
 .description {
     margin: 10px 20px;
     padding: 10px 30px;
+    max-width: 50%;
     background-color: #252B29;
     align-self: center;
+    font-size: 1.1rem;
 
     border-radius: 20px;
     box-shadow: 0px 0px 20px -2px;
@@ -265,24 +271,23 @@ nav {
     justify-content: center;
     align-content: center;
 }
-.space-between {
-    display: flex;
-
-    justify-content: space-between;
-    align-content: center;
-}
 
 /* ---------------- Dropdown CSS */
 
 .dropdown {
+    padding: 7px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     background-color: #D8E9FD;
     position: fixed;
     right: 40px;
     bottom: 20px;
     cursor: pointer;
-    padding: 7px;
-
     box-shadow: 0px 0px 20px -2px;
     z-index: 10000;
 }
@@ -290,23 +295,21 @@ nav {
 .bar1, .bar2, .bar3 {
     width: 37px;
     height: 5px;
-    margin: 5px;
+    margin: 3px;
     background-color: #3E5033;
     transition: 0.5s;
   }
   
   .change .bar1 {
-    width: 35px;
-    -webkit-transform: rotate(-45deg) translate(-6px, 8px);
-    transform: rotate(-45deg) translate(-7px, 8px);
+    -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+    transform: rotate(-45deg) translate(-8px, 8px);
   }
   
   .change .bar2 {opacity: 0;}
   
   .change .bar3 {
-    width: 35px;
-    -webkit-transform: rotate(45deg) translate(-3px, -6px);
-    transform: rotate(45deg) translate(-6px, -7px);
+    -webkit-transform: rotate(45deg) translate(-7px, -8px);
+    transform: rotate(45deg) translate(-7px, -8px);
   }
   .menu {
     display: flex;
@@ -362,6 +365,7 @@ nav {
 footer {
     display: flex;
     min-height: 200px;
+    font-size: 1.1rem;
     border-top: 1px solid gray;
     background-color: rgba(37, 43, 41, .8);
 }
@@ -369,7 +373,7 @@ footer .links-section {
     display: flex;
     flex-direction: row;
     height: calc(100% - 40px);
-    width: 40%;
+    width: 50%;
 }
 footer .links-section .link-group {
     display: flex;
@@ -386,6 +390,10 @@ footer .links-section .link-group {
     #main .content-row {
         width: 99%;
     }
+
+    .description {
+        max-width: 90%;
+    }
 }
 @media only screen and (max-width: 1025px) {
     #main .content-row {
@@ -400,7 +408,7 @@ footer .links-section .link-group {
     }
 
     /* Dropdown */
-    .menu {
+    /* .menu {
         right: 37px;
         width: 175px;
         height: 150px;
@@ -416,21 +424,15 @@ footer .links-section .link-group {
         transform: rotate(-45deg) translate(-6px, 6px);
       }
       
-      .change .bar2 {opacity: 0;}
-      
-      .change .bar3 {
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
         width: 24px;
         -webkit-transform: rotate(45deg) translate(-3px, -6px);
         transform: rotate(45deg) translate(-4px, -5px);
-      }
+    } */
 }
 @media only screen and (max-width: 769px) {
-     #pageContainer {
-        background: url("./pictures/dark-nature.webp");
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
     .section .content-row {
         max-width: 100%;
     }
