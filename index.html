@@ -12,8 +12,8 @@
         <div id="pageContainer">
 
             <nav>
-                <div>
-                    <h1 id="page-signature"><a href="#">Full-Stack Web Developer</a></h1>
+                <div id="page-signature">
+                    <h1 id="static-signature"><a href="#">Full-Stack Web Developer</a></h1>
                 </div>
                 <!-- Fixed Nav Button -->
                 <div class="dropdown closed">
@@ -213,8 +213,15 @@
                 </div>
             </footer>
         </div>
-        </body>
-    <script src="../index.js"></script>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://cdn.skypack.dev/three"
+                }
+            }
+        </script>
+        <script type="module" src="text-animation.js"></script>
+        <script src="./index.js"></script>
     </body>
 
 </html>

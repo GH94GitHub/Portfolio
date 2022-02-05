@@ -193,10 +193,7 @@ hr.divider {
     
 }
 
-#page-signature a{
-    text-decoration: none;
-    padding: 0 10px;
-}
+
 /* -------- Presentation Modal Player ------------ */
 .modal {
     width: 100%;
@@ -224,7 +221,18 @@ nav {
     font-size: 1.3em;
 }
 #page-signature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page-signature a{
+    text-decoration: none;
+    padding: 0 10px;
+}
+#page-signature h1{
     margin: auto 0;
+    width: fit-content;
     font-size: 2em;
     font-family: 'Cookie', cursive;
 }
