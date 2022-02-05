@@ -21,31 +21,30 @@ scene.add(light);
 
 
 
-camera.position.set( 0, 0, 40);
+camera.position.set( 0, 0, 65);
 camera.lookAt(0,0,0);
 
 renderer.setSize( container.clientWidth, container.clientHeight);
-container.appendChild(renderer.domElement);
+
 
 fontLoader.load("https://cdn.skypack.dev/three/examples/fonts/helvetiker_regular.typeface.json", (font) => {
     fontGeometry = new TextGeometry("Full Stack Web Developer", {
         font: font,
-        size: 22,
-        height: 1,
+        size: 25,
+        height: 2,
         curveSegments: 10,
         bevelEnabled: true,
-        bevelThickness: 0,
+        bevelThickness: 1,
         bevelSize: 1,
-        bevelOffset: 0,
+        bevelOffset: .7,
         bevelSegments: 10
     });
     
     textMesh = new Mesh(fontGeometry, materials);
-    textMesh.position.y = -20;
+    textMesh.position.y = -15;
     fontGeometry.computeBoundingBox();
     const centerOffset = - 0.5 * ( fontGeometry.boundingBox.max.x - fontGeometry.boundingBox.min.x );
     textMesh.position.x = centerOffset;
-    scene.add(textMesh);
 });
 
 renderer.render(scene, camera);
@@ -54,16 +53,18 @@ function animate() {
     requestAnimationFrame(animate);
     if (textMesh) {
         if (staticShowing) {
+            container.appendChild(renderer.domElement);
             container.removeChild(staticSignature);
+            scene.add(textMesh);
             staticShowing = false;
         }
         if (scene.direction === 'positive')  {
-            scene.rotation.y += .0002
-            if (scene.rotation.y > .07) scene.direction = 'negative';
+            scene.rotation.y += .00015
+            if (scene.rotation.y > .05) scene.direction = 'negative';
         }
         else if (scene.direction === 'negative') {
-            scene.rotation.y -= .0002
-            if (scene.rotation.y < -.07) scene.direction = 'positive';
+            scene.rotation.y -= .00015
+            if (scene.rotation.y < -.05) scene.direction = 'positive';
         } 
         
     }
