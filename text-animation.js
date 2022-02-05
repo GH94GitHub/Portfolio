@@ -44,7 +44,6 @@ fontLoader.load("https://cdn.skypack.dev/three/examples/fonts/helvetiker_regular
     textMesh.position.y = -20;
     fontGeometry.computeBoundingBox();
     const centerOffset = - 0.5 * ( fontGeometry.boundingBox.max.x - fontGeometry.boundingBox.min.x );
-    console.log(fontGeometry.boundingBox);
     textMesh.position.x = centerOffset;
     scene.add(textMesh);
 });
