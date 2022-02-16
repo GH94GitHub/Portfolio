@@ -4,9 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const introEl = document.querySelector('#main .content-row'); // First screen with Bio
     const dropdown = document.querySelector('.dropdown'); 
     const pageLinks = document.querySelectorAll('.page-link'); // Links that link to somewhere within the page
-    const modal = document.querySelector('.modal'); // Modal holds video presentations
-    const video = modal.querySelector('video');
-    const presentations = document.querySelectorAll('.pp'); // Presentation cards
     const pageContainer = document.querySelector('#pageContainer');
     
     // Fade In Intro after time
@@ -32,29 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
-    /**
-     * Opens modal window and injects desired uri into video source src
-     */
-    for (const presentation of presentations) {
-        presentation.addEventListener('click', (e) => {
-            e.preventDefault();
-            // uri to inject into modal video src
-            const videoSrc = presentation.getAttribute("videoSrc");
-            modal.classList.add('modal-open');
-            video.querySelector('source').setAttribute('src', videoSrc);
-            
-            video.load();
-        })
-    }
-    /**
-     * When the modal is open, if the user clicks outside the modal window 
-     * it close the modal window
-     */
-    modal.addEventListener('click', (e) => {
-        if (!isMouseHovering('.modal-window') && modal.classList.contains('modal-open')) {
-            modal.classList.remove('modal-open');
-        }
-    });
+
     // Dropdown click
     dropdown.addEventListener('click', (e) => {
         animateDropdown(dropdown);

@@ -84,6 +84,9 @@ hr.divider {
     justify-content: center;
 }
 
+.project#angular-dashboard {
+    background: url('./pictures/angular-dashboard.webp');
+}
 .project#bcrs {
     background: url('./pictures/bcrs.webp');
 }
@@ -119,7 +122,7 @@ hr.divider {
     border-radius: 7%;
     box-shadow: 0px 0px 4px 1px grey;
     transition: all .1s ease-in-out;
-
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -158,39 +161,46 @@ hr.divider {
 }
 .technologies .angular {
     background-color: #b52628;
-    
 }
+
+.technologies .material-ui {
+    background-color: #3F51B5
+}
+
+.technologies .primeng {
+    background-color: #C3002F;
+}
+
 .technologies .node {
     background-color: #74a300;
-    
 }
+
 .technologies .express {
     background-color: #ceb916;
-    
 }
+
 .technologies .mongodb {
     background-color: #41A139;
-    
 }
+
 .technologies .knockoutjs {
     background-color: #CA4900;
-    
 }
+
 .technologies .css {
     background-color: #006AB1;
-    
 }
+
 .technologies .html {
     background-color: #E8885E;
-    
 }
+
 .technologies .presentation {
     background-color: #CB4424;
-    
 }
+
 .technologies .jquery {
-    background-color:  #7ACEF4;
-    
+    background-color:  #7ACEF4;  
 }
 
 
