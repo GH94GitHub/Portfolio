@@ -84,6 +84,9 @@ hr.divider {
     justify-content: center;
 }
 
+.project#revamedia {
+    background: url('./pictures/revameida-background.webp');
+}
 .project#angular-dashboard {
     background: url('./pictures/angular-dashboard.webp');
 }
@@ -163,8 +166,15 @@ hr.divider {
     background-color: #b52628;
 }
 
+.technologies .java-spring {
+    background-color: #6DB33F;
+}
+.technologies .postgresql {
+    background-color: #316193;
+}
+
 .technologies .material-ui {
-    background-color: #3F51B5
+    background-color: #3F51B5;
 }
 
 .technologies .primeng {
